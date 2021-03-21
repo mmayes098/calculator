@@ -37,3 +37,13 @@ function operate(a, b, operator) {
 
     return result;
 }
+
+function updateDisplay(a) {
+    const display = document.getElementById("display");
+    const child = document.getElementById("output");
+    const div = document.createElement('div');
+    div.setAttribute('id', 'output');
+    div.textContent = a;
+    display.removeChild(child);
+    display.appendChild(div);
+}
