@@ -1,3 +1,5 @@
+var currentNumber = 0;
+
 function add(a, b) {
     var result = a + b;
     return result;
@@ -16,7 +18,7 @@ function multiply(a, b) {
 function divide(a, b) {
     if (b == 0) {
         alert("You know you can't divide by zero!");
-        //reset or clear calculator contents here
+        currentNumber = 0;
     }
 
     var result = a / b;
