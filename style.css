@@ -1,11 +1,11 @@
 .container {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    align-content: space-evenly;
+    align-content: center;
     text-align: center;
-    width: 30%;
+    width: 35%;
     max-width: 400px;
     /* min-width: 250px; */
     height: 75%;
@@ -13,8 +13,25 @@
     /* min-height: 400px; */
     border: 2px solid black;
     margin: auto;
+    font-family: 'OCR-A', 'Fixedsys', 'Consolas', monospace, sans-serif;
+}
+
+.input {
+    border-radius: 20%;
+    padding: 7%;
+    margin: 0.5em;
+    font-size: 18px;
+    font-family: 'OCR-A', 'Fixedsys', 'Consolas', monospace, sans-serif;
+}
+
+.row {
+    flex-basis: 100%;
 }
 
 #output {
     flex-basis: 100%;
+    font-size: 30px;
+    border: 1px solid black;
+    margin: 2%;
+    height: auto;
 }
